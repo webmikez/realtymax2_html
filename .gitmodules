@@ -1,0 +1,6 @@
+[submodule "image"]
+	path = image
+	url = git@github.com:webmikez/realtymax2_image.git
+[submodule "css"]
+	path = css
+	url = git@github.com:webmikez/realtymax2_css.git
