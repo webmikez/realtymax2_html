@@ -1,0 +1,30 @@
+.table{
+  &.table-no-border{
+    tr{
+      th,td{
+        border: none;
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+    }
+    &.column-width-25{
+      thead,tbody{
+        tr{
+          th,td{
+            width: 25%;
+          }
+        }
+      }
+    }
+    &.column-width-50{
+      thead,tbody{
+        tr{
+          th,td{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

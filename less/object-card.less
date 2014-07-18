@@ -1,0 +1,181 @@
+// Объект подробно
+.object-card-holder{
+  margin:5px 0 25px 0;
+  .object-costs-holder{
+    margin-bottom: 7px;
+    padding-bottom: 5px;
+    .clearfix;
+    .object-costs{
+      font-size: 17px;
+      margin-bottom: 3px;
+      padding-left: 0!important;
+      label{
+        display: block;
+        font-size: 12px;
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+      .btn{
+        margin-top: 6px;
+        font-size: 12px;
+        padding: 5px 14px;
+      }
+    }
+    .rma-partner-link{
+      float: left;
+      font-size: 12px;
+      border: solid 1px #cccccc;
+      padding: 10px;
+      margin: 15px 0;
+      width: 100%;
+      .rma-partner-logo,
+      .rma-partner-settings{
+        width: 50%;
+        float: left;
+        padding: 0 7px;
+      }
+      .rma-partner-logo{
+        text-align: center;
+        margin-top: 3px;
+      }
+      .rma-partner-settings{
+        .partners-name{
+          display: block;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .table{
+    margin-bottom: 0;
+    tr{
+      td{
+        border-top:dotted 1px #999999;
+        font-size: 12px;
+        padding: 4px 0;
+        line-height: normal;
+        &:first-child{
+          width: 30%;
+          color: #666666;
+        }
+        &:last-child{
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .object-more-settings{
+    .clearfix;
+    .settings{
+      width: 308px;
+      float: left;
+    }
+  }
+
+  .object-contact-phone{
+    float: left;
+    border: solid 1px #cccccc;
+    padding: 10px;
+    margin: 10px 0 0 13px;
+    width: 324px;
+    font-size: 12px;
+    .phone-num{
+      display: block;
+      font-size: 17px;
+      color: #000000;
+    }
+    &:hover{
+     text-decoration: none;
+    }
+  }
+  .object-more-info{
+    margin: 15px 0 0 0;
+    h5{
+      margin-bottom: 15px;
+    }
+    h3{
+      .ajax-link{
+        font-size: 13px;
+      }
+    }
+    .object-location{
+      display: block;
+      width: 645px;
+      height: 295px;
+      margin:15px 0 25px 0;
+      .similar-location-metro{
+        background-color: #eeeeee;
+        padding: 7px;
+        font-size: 12px;
+        .metro-line-color{
+          border: solid 1px #cccccc;
+        }
+      }
+    }
+  }
+}
+
+//Похожие объекты
+.similar-property-list-holder{
+  .similar-property-object{
+    &:last-child{
+      border-bottom: none;
+    }
+    border-bottom: solid 1px #c7c7c7;
+    padding: 20px 0;
+    margin: 0;
+    .similar-property-title{
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      .label-newest{
+        float: right;
+        padding: 1px 5px 2px 5px;
+        font-size: 11px;
+        font-weight: 400;
+        background-color: #e60004;
+        color: #ffffff;
+      }
+    }
+    .pull-left{
+      position: relative;
+      margin-right: 25px;
+      .media-object{
+        width: 205px;
+        height: 144px;
+      }
+      .property-info-label{
+        position: absolute;
+        display: inline-block;
+        vertical-align: top;
+        padding: 3px 5px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 10px;
+        background-color: rgba(0, 0, 0, .4);
+        &:hover{
+          background-color: rgba(0, 0, 0, .7);
+        }
+      }
+    }
+    .media-body{
+      .object-costs{
+        font-size: 17px;
+        margin-bottom: 15px;
+        label{
+          display: block;
+          font-size: 12px;
+          font-weight: normal;
+          margin-bottom: 0;
+        }
+      }
+      .object-adress,
+      .object-locations,
+      .object-area{
+        font-size: 12px;
+        margin: 5px 0;
+      }
+    }
+  }
+}

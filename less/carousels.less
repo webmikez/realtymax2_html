@@ -1,0 +1,312 @@
+.branding {
+  z-index:10;
+  position:fixed;
+  top:0;
+  left:-5000px;
+  right:-5000px;
+  text-align:center;
+  + .page-holder{
+    margin-top: 127px;
+  }
+  &.hidden{
+    + .page-holder{
+      margin-top: 0;
+    }
+  }
+}
+
+//Слайдер на главной странице
+.main-promo-holder{
+  width: 636px;
+  height: 387px;
+  .carousel-caption{
+    left: 0;
+    bottom: 20px;
+    top: auto;
+    background-color: rgba(0, 0, 0, .8);
+    width: 636px;
+    padding: 0;
+    .carousel-caption-helper{
+      position: relative;
+      padding: 25px 15px;
+      text-align: left;
+      .promo-tag-name{
+        position: absolute;
+        top: -7px;
+        left: 20px;
+        font-size: 11px;
+        .red-aside,
+        .white-aside{
+          display: inline-block;
+          vertical-align: top;
+          margin-left: -.30em;
+          padding: 3px 7px 2px 7px;
+          text-shadow: none;
+        }
+        .red-aside{
+          background-color: #ea1720;
+          text-transform: uppercase;
+        }
+        .white-aside{
+          background: url("../image/icons/promo-tag-arrow.png") 0 0 no-repeat #ffffff;
+          color: #888888;
+          padding-left: 12px;
+        }
+      }
+    }
+    a{
+      color: #ffffff;
+      .review-title{
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .review-text{
+        font-size: 12px;
+      }
+      &:hover{
+        text-decoration: none;
+        color: #ffffff;
+        .review-title{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .carousel-indicators{
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: right;
+    bottom: 25px;
+    padding-right: 15px;
+    li{
+      border-radius: 0;
+      border: none;
+      width: 8px;
+      height: 5px;
+      background-color: #dddddd;
+      margin: 0 0 0 7px;
+      &.active{
+        background-color: red;
+      }
+    }
+  }
+  .carousel-control{
+    top: 50%;
+    margin-top: -38px;
+    width: 34px;
+    height: 34px;
+    .box-shadow(none);
+    background-image: url("../image/sprites.png")!important;
+    background-repeat: no-repeat!important;
+    .opacity(1);
+    &:hover{
+      .opacity(1);
+    }
+    &.left{
+      left: 15px;
+      background-position: -127px -184px;
+      &:hover{
+        background-position: -164px -184px;
+      }
+    }
+    &.right{
+      left: auto;
+      right: 15px;
+      background-position: -129px -146px;
+      &:hover{
+        background-position: -166px -146px;
+      }
+    }
+  }
+}
+
+.fotorama__stage{
+  margin-bottom: 10px!important;
+}
+.fotorama__thumb-border{
+  margin-top: 0!important;
+}
+.fotorama__nav--thumbs {
+  .fotorama__nav__frame{
+    padding: 0 10px 0 0!important;
+  }
+}
+//Позиционирование thumbs в fotorama при fuulscreen
+.fotorama--fullscreen{
+  .fotorama__nav-wrap{
+    position: fixed!important;
+    bottom: 15px!important;
+    .fotorama__nav{
+      padding-top: 10px!important;
+    }
+  }
+}
+
+//Начало стилей блока Спецпердложения
+.float-gallery {
+  margin: 0 0 20px 0;
+  width: 304px;
+  position: relative;
+  .float-gallery__layout {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    .float-gallery__item {
+      width: 304px;
+      height: 128px;
+      position: absolute;
+      a{
+        &.media{
+          float: left;
+        }
+        &:hover{
+          text-decoration: none;
+          .media-heading{
+            text-decoration: underline;
+          }
+        }
+        .pull-left{
+          .media-object{
+            overflow: hidden;
+            width: 139px;
+            height: 101px;
+          }
+        }
+
+        .media-body{
+          display: block;
+          .media-heading{
+            padding: 0;
+            display: block;
+            margin:0 0 5px 0;
+            font-size: 12px;
+          }
+          p{
+            color: #000000!important;
+            padding: 0;
+            margin: 0;
+            font-size: 11px;
+          }
+        }
+      }
+
+    }
+  }
+  .float-gallery__pages {
+    font-size: 11px;
+    color: #666;
+    text-align: right;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 10px;
+      height: 5px;
+      background: #d1d1d1;
+      padding: 0;
+      margin-left: 10px;
+      cursor: pointer;
+      &:hover {
+        background: #ea1720;
+      }
+      &.active {
+        background: #ea1720;
+        cursor: default;
+      }
+    }
+    .float-gallery__prev {
+      display: inline-block;
+      vertical-align: top;
+      background: url("../image/float-galery__btn.png") #dcdcdc;
+      width: 17px;
+      height: 17px;
+      border: none !important;
+      margin-right: 15px;
+      &:hover {
+        background-position: 0 bottom;
+      }
+    }
+    .float-gallery__next {
+      display: inline-block;
+      vertical-align: top;
+      background: url("../image/float-galery__btn.png") no-repeat right 0 #dcdcdc;
+      width: 17px;
+      height: 17px;
+      border: none !important;
+      margin-left: 15px;
+      &:hover {
+        background-position: right bottom;
+      }
+    }
+  }
+}
+//Конец стилей блока Спецпердложения
+
+//Начало стилей блока Каталог объектов недвижимости на главной странице
+#propertyObjectsCarousel{
+  .page-header{
+    margin-bottom: 15px;
+    .pull-right{
+      .carousel-control{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../image/float-galery__btn.png") #dcdcdc;
+        width: 17px;
+        height: 17px;
+        .opacity(1);
+        &.left{
+          &:hover{
+            background-position: 0 bottom;
+          }
+        }
+        &.right{
+          background-position: right 0;
+          &:hover {
+            background-position: right bottom;
+          }
+        }
+      }
+      .slider-counter{
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 11px;
+        color: #666666;
+      }
+    }
+  }
+  .media{
+    .pull-left{
+      margin-right: 10px;
+      .media-object{
+        width: 313px;
+        height: 194px;
+      }
+    }
+    .media-body{
+      .media-heading{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        line-height: normal;
+      }
+      p{
+        color: #333333;
+        margin: 0 0 5px 0;
+      }
+    }
+  }
+  .tag-name-holder{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+    background-color: #ececec;
+    padding: 2px 5px;
+    color: #666666;
+  }
+}
+//Конец стилей блока Каталог объектов недвижимости на главной странице

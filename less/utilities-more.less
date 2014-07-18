@@ -1,0 +1,148 @@
+h1{
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  line-height: 24px;
+}
+.ajax-link {
+  border-bottom-style: dashed !important;
+  border-bottom-width: 1px;
+  text-decoration: none !important;
+  &:hover {
+    border-bottom-color: transparent !important;
+    text-decoration: none !important;
+  }
+}
+a {
+  outline: none!important;
+}
+
+p{
+  padding-bottom: 10px;
+}
+
+.metro-line-color{
+  display: inline-block;
+  vertical-align: baseline;
+  width: 7px;
+  height: 7px;
+  margin: 0 3px;
+  &.orange-line{
+    background-color: #ffa800;
+  }
+}
+
+.driving-time{
+  color: #818181;
+}
+
+.top-bottom-nopadding{
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.push-top-bottom-20{
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.push-bottom-15{
+  margin-bottom: 15px!important;
+}
+
+.push-bottom-20{
+  margin-bottom: 20px!important;
+}
+
+.push-left-10{
+  margin-left: 10px!important;
+}
+
+.push-left-15{
+  margin-left: 15px!important;
+}
+
+.push-top-15{
+  margin-top: 15px!important;
+}
+
+.push-top-20{
+  margin-top: 20px!important;
+}
+
+.push-top-22{
+  margin-top: 22px!important;
+}
+
+.push-top-23{
+  margin-top: 23px!important;
+}
+
+.scroll-to-top {
+  position: fixed;
+  background:url("../image/scroll-top-arrow.png") no-repeat 0 0;
+  cursor: pointer;
+  width:59px;
+  height: 59px;
+  left: 50px;
+  bottom: 50px;
+  display: none;
+  z-index: 999;
+}
+
+.img-grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* For Webkit browsers */
+  filter: gray; /* For IE 6 - 9 */
+  -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  &:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  }
+}
+
+.pagination{
+  &.pagination-sm {
+    .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-extra-small; @border-radius-base);
+    a{
+      border-color: #c7c7c7;
+    }
+    .active{
+      a{
+        background-color: @brand-danger;
+        border-color: darken(@brand-danger, 15%);
+      }
+    }
+  }
+}
+
+.no-border{
+  border: none;
+}
+
+.no-top-margin{
+  margin-top: 0!important;
+}
+
+.no-margin{
+  margin: 0!important;
+}
+
+.no-padding{
+  padding: 0!important;
+}
+
+.no-padding-left{
+  padding-left: 0!important;
+}
+
+.bullet-square{
+  padding: 0;
+  margin: 10px 0 10px 10px;
+  list-style-type: none;
+  li{
+    padding:7px 0 7px 15px;
+    background: url("../image/dark-blue-bullet-lg.gif") 0 15px no-repeat;
+  }
+}
