@@ -1,23 +1,62 @@
-h1{
-  letter-spacing: -0.04em;
-  font-weight: 600;
-  line-height: 24px;
-}
 .ajax-link {
   border-bottom-style: dashed !important;
   border-bottom-width: 1px;
   text-decoration: none !important;
+  line-height: normal!important;
   &:hover {
     border-bottom-color: transparent !important;
     text-decoration: none !important;
   }
 }
+
+h1{
+  line-height: 24px!important;
+}
+
+h1,h2,h3,h4,h5{
+  line-height: 18px;
+  margin:  0;
+  color: #000;
+}
+
 a {
   outline: none!important;
 }
 
 p{
-  padding-bottom: 10px;
+  padding-bottom: 6px;
+}
+
+.breadcrumb{
+  > li{
+    + li:before {
+      padding: 0 2px;
+    }
+  }
+}
+
+.shared-links{
+  li{
+    padding: 0 1px;
+  }
+  a{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../image/icons/shared.png") no-repeat;
+    &:hover{
+      .opacity(0.8);
+    }
+    &.facebook{
+      background-position: 0 0;
+    }
+    &.twitter{
+      background-position: -16px 0;
+    }
+    &.vk{
+      background-position: -32px 0;
+    }
+  }
 }
 
 .metro-line-color{
@@ -45,6 +84,10 @@ p{
   margin-bottom: 20px!important;
 }
 
+.push-bottom-10{
+  margin-bottom: 10px!important;
+}
+
 .push-bottom-15{
   margin-bottom: 15px!important;
 }
@@ -61,6 +104,14 @@ p{
   margin-left: 15px!important;
 }
 
+.push-top-5{
+  margin-top: 5px!important;
+}
+
+.push-top-10{
+  margin-top: 10px!important;
+}
+
 .push-top-15{
   margin-top: 15px!important;
 }
@@ -75,6 +126,28 @@ p{
 
 .push-top-23{
   margin-top: 23px!important;
+}
+
+.pull-bottom-5{
+  padding-bottom: 5px!important;
+}
+
+.pull-bottom-10{
+  padding-bottom: 10px!important;
+}
+
+//Размеры шрифтов
+.fsize-12{
+  font-size: 12px;
+}
+.fsize-13{
+  font-size: 13px;
+}
+.fsize-14{
+  font-size: 14px;
+}
+.fsize-15{
+  font-size: 15px;
 }
 
 .scroll-to-top {
@@ -139,10 +212,10 @@ p{
 
 .bullet-square{
   padding: 0;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 10px 0px;
   list-style-type: none;
   li{
-    padding:7px 0 7px 15px;
+    padding:5px 0 5px 15px;
     background: url("../image/dark-blue-bullet-lg.gif") 0 15px no-repeat;
   }
 }
