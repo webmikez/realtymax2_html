@@ -1,4 +1,4 @@
-.information-tabs-holder{
+.users-comments-holder{
   margin-top: 15px;
   .nav-tabs{
     li{
@@ -9,6 +9,7 @@
           border-right: none;
           border-top: none;
           border-bottom: solid 2px #000000;
+          font-weight: bold;
           &:hover{
             background: none;
             border-left: none;
@@ -31,12 +32,85 @@
           border-left: none;
           border-right: none;
           border-top: none;
-          border-bottom: solid 2px #000000;
+          border-bottom: solid 2px red;
         }
       }
     }
   }
   .tab-content{
     margin-top: 15px;
+    .sorting-filter-holder{
+      padding: 9px 0;
+      margin: 0 0 15px 0;
+      border-bottom: solid 1px #ebebeb;
+      a{
+        display: inline-block;
+        padding: 0 7px;
+        border-right: solid 1px #a6a6a6;
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          border-right: none;
+        }
+        &.active{
+          color: #333;
+          &:hover{
+            text-decoration: none;
+            cursor: default;
+          }
+        }
+      }
+    }
+    .show-more{
+      margin-left: 52px;
+      margin-bottom: 15px;
+    }
+    .user-answer-form{
+      position: relative;
+      .textarea-holder{
+        position: relative;
+        padding-left: 9px;
+        &:after {
+          position: absolute;
+          top: 8px;
+          left: -8px;
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 9px solid transparent;
+          border-right: 9px solid #ccc;
+          border-top: 9px solid transparent;
+          border-bottom: 9px solid transparent;
+          z-index: 1;
+        }
+        &:before {
+          position: absolute;
+          top: 9px;
+          left: -5px;
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid #ffffff;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          z-index: 2;
+        }
+      }
+      .close{
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        width: 10px;
+        height: 10px;
+        background: url("../image/icons/close-white.gif") 0 0 no-repeat;
+        .opacity(1);
+        z-index: 3;
+        &:hover{
+          .opacity(.7);
+        }
+      }
+    }
   }
 }

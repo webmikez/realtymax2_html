@@ -147,3 +147,106 @@
   }
 
 }
+
+//Коментарии
+.user-post{
+  &:after{
+    content: "";
+    display: block;
+    height: 15px;
+  }
+  &.level-2{
+    margin-left: 52px;
+  }
+  .media-object{
+    margin-top: 4px;
+  }
+  .media-heading{
+    margin-bottom: 7px;
+    .user-name{
+      float: left;
+    }
+    .user-post-date{
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 11px;
+      color: #999999;
+      .clearfix;
+    }
+    .user-post-rating{
+      float: right;
+      &.good-rating{
+        color: #3576b5;
+      }
+      &.bad-rating{
+        color: red;
+      }
+      .user-post-rating-control{
+        margin-left: 5px;
+        .btn;
+        .btn-primary;
+        background-image: url("../image/icons/plus-minus.gif");
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        border: none;
+        &.plus{
+          background-position: 0 4px;
+        }
+        &.minus{
+          margin-left: 0;
+          background-position: 0 -22px;
+        }
+      }
+    }
+  }
+
+  .answers-control{
+    a{
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+
+  .coments-answers-holder{
+    margin-top: 4px;
+    font-size: 11px;
+    color: #999999;
+    .coments-answers{
+      position: relative;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #333;
+      background-color: #f0f0f0;
+      padding:10px 15px;
+      &:after {
+        position: absolute;
+        top: -7px;
+        left: 75px;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #f0f0f0;
+      }
+      .close{
+        margin-top: 0px;
+        margin-right: -7px;
+        float: right;
+        width: 10px;
+        height: 10px;
+        background: url("../image/icons/close.gif") 0 0 no-repeat;
+        .opacity(1);
+        &:hover{
+          .opacity(.7);
+        }
+      }
+    }
+  }
+
+  p{
+    margin-bottom: 5px;
+  }
+}

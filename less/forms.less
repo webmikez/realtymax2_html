@@ -200,41 +200,179 @@
       tbody{
         td{
           padding: 0 8px;
-          .control-label{
-            font-weight: normal;
-            color: #666666;
-            font-size: 12px;
-            margin-bottom: 0;
-          }
-          .form-control{
-            font-size: 12px;
-            border-color: #cedeee;
-            padding-left: 5px;
-            padding-right: 5px;
-          }
           .btn{
             font-size: 13px;
             width: 115px;
           }
-          .saleTransactionType,
-          .rentTransactionType{
-            width: 215px;
+          .open{
+            a{
+              &:hover{
+                text-decoration: none;
+              }
+              text-decoration: none;
+            }
           }
-          .salePropertyAreaFrom,
-          .rentPropertyAreaFrom{
-            width: 90px;
+          .caret{
+            float: right;
+            margin-top: 7px;
           }
-          .salePropertyAreaTo,
-          .rentPropertyAreaTo{
-            width: 90px;
+          .select-regions{
+            display: block;
+            width: 244px;
+            background-color: #ffffff;
+            font-size: 12px;
+            border:solid 1px #cedeee;
+            padding:7px 12px 6px 12px;
+            color: #999999;
+            text-decoration: none;
+            &:hover{
+              text-decoration: none;
+            }
           }
-          .salePropertyPriceFrom,
-          .rentPropertyPriceFrom{
-            width: 110px;
+          .select-regions-menu{
+            top: 38px;
+            width: 511px;
+            padding: 15px 5px;
+            border:solid 1px #cedeee;
           }
-          .salePropertyPriceTo,
-          .rentPropertyPriceTo{
-            width: 115px;
+          .towns-holder,
+          .regions-holder{
+            .make-lg-column(6);
+            .page-header{
+              font-size: 14px;
+              margin: 0;
+              padding: 0 0 5px 0;
+              border-bottom-color: #d2d3d6;
+              color: #4a505d;
+            }
+            .select-regions-lists{
+              padding: 5px 0 0 0;
+              margin: 0;
+              list-style-type: none;
+              li{
+                a{
+                  display: block;
+                  padding: 5px 10px;
+                  color: #3576b5;
+                  &:hover{
+                    color: #fff;
+                    background-color: #3a83c7;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+            .more-select{
+              display: block;
+              margin-top: 34px;
+              padding-left: 10px;
+            }
+          }
+
+          .select-costs{
+            display: block;
+            width: 188px;
+            background-color: #ffffff;
+            font-size: 12px;
+            border:solid 1px #cedeee;
+            padding:7px 12px 6px 12px;
+            color: #999999;
+            text-decoration: none;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+          .select-costs-menu{
+            top: 38px;
+            width: 237px;
+            padding: 15px 5px;
+            border:solid 1px #cedeee;
+            .form-group{
+              padding: 0 10px;
+              margin: 0;
+            }
+            .form-control{
+              border:solid 1px #cedeee;
+              padding-left: 5px;
+              padding-right: 5px;
+              .box-shadow(none);
+              font-size: 12px;
+              color: #666666;
+            }
+            .costs-lists{
+              padding: 0;
+              margin: 15px 0 0 0;
+              list-style-type: none;
+              li{
+                line-height: 25px;
+                a{
+                  letter-spacing: -0.05em;
+                }
+              }
+            }
+          }
+
+          .select-stages{
+            display: block;
+            width: 179px;
+            background-color: #ffffff;
+            font-size: 12px;
+            border:solid 1px #cedeee;
+            padding:7px 12px 6px 12px;
+            color: #999999;
+            text-decoration: none;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+
+          .select-stages-menu{
+            top: 38px;
+            width: 177px;
+            padding: 5px 10px;
+            border:solid 1px #cedeee;
+            .checkbox{
+              &:last-child{
+                label{margin-bottom: 0;}
+              }
+            }
+            label{
+              color: #3576b5;
+              input{
+                margin-top: 3px;
+              }
+            }
+          }
+
+          .select-finishing-date{
+            display: block;
+            width: 104px;
+            background-color: #ffffff;
+            font-size: 12px;
+            border:solid 1px #cedeee;
+            padding:7px 12px 6px 12px;
+            color: #999999;
+            text-decoration: none;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+          .select-finishing-date-menu{
+            top: 38px;
+            width: 191px;
+            padding: 5px 10px;
+            border:solid 1px #cedeee;
+            .checkbox{
+              &:last-child{
+                label{margin-bottom: 0;}
+              }
+            }
+            label{
+              color: #3576b5;
+              input{
+                margin-top: 3px;
+              }
+            }
           }
         }
       }

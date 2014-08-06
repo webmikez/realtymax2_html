@@ -137,6 +137,9 @@ p{
 }
 
 //Размеры шрифтов
+.fsize-11{
+  font-size: @font-size-extra-small;
+}
 .fsize-12{
   font-size: 12px;
 }
@@ -218,4 +221,46 @@ p{
     padding:5px 0 5px 15px;
     background: url("../image/dark-blue-bullet-lg.gif") 0 15px no-repeat;
   }
+}
+
+.bullet-square-gray{
+  padding: 0;
+  margin: 0 0 10px 0px;
+  list-style-type: none;
+  li{
+    padding:3px 0 3px 15px;
+    background: url("../image/gray-bullet-lg.gif") 0 12px no-repeat;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+}
+
+.alert-warning{
+  h5{
+    color: #555555;
+    margin-bottom: 10px;
+  }
+}
+
+.collapse-link{
+  padding-right: 15px;
+  display: inline-block;
+  cursor:pointer;
+  color: @link-color;
+  background: url("../image/icons/collapse.gif") 100% 7px no-repeat;
+  &.collapsed{
+    background-position: 100% -18px;
+  }
+  &:hover{
+    color: red;
+    text-decoration: underline;
+  }
+}
+
+.show-more{
+  display: block;
+  padding: 4px 0;
+  text-align: center;
+  background-color: #ededed;
 }
