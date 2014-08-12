@@ -81,7 +81,7 @@ body{
     }
 
     .header-content-holder{
-      padding: 33px 25px 0 25px;
+      padding: 33px 27px 0 27px;
 
       .logo-holder{
         float: left;
@@ -210,9 +210,39 @@ body{
       }
     }
   }
+
+  .leading-companies{
+    margin: 0 0 -10px 0;
+    height: 87px;
+    padding: 0 27px;
+    background: url("../image/leading-companies-bg.jpg") 0 0 repeat-x;
+    .leading-companies-logo-holder{
+      overflow: hidden;
+      height: 78px;
+      width: 970px;
+      .leading-companies-logo-list{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li{
+          float: left;
+          text-align: center;
+          width: 138.571px;
+          height: 77px;
+          &.leading-companies-logo-title{
+            line-height: 77px;
+            text-align: left;
+            width: 132px;
+            background: url("../image/leading-companies-arrow.jpg") 100% 50% no-repeat;
+          }
+        }
+      }
+    }
+  }
+
   main{
     .clearfix;
-    padding: 25px 25px 0 25px;
+    padding: 25px 27px 0 27px;
 
     .contacts-holder{
       position: relative;
@@ -224,13 +254,15 @@ body{
     article{
       float: left;
       width: 636px;
-      margin-right: 34px;
+      margin-right: 29px;
       .page-header{
         margin: 20px 0 0 0;
         border-bottom-color: #c7c7c7;
-        h2,h3,h4,h5{
+        h1,h2,h3,h4,h5{
           margin-bottom: 0;
           small{
+            display: inline-block;
+            margin-left: 10px;
             font-size: 12px;
             color: @link-color;
           }
@@ -285,15 +317,15 @@ body{
       }
       .news-list-reviews{
         padding: 0;
-        margin: 15px 0;
+        margin: 25px 0 15px 0;
         list-style-type: none;
         .clearfix;
         li{
           float: left;
-          .make-lg-column(6);
+          width: 311px;
           padding: 0;
           &:last-child{
-            padding-left: 5px;
+            padding-left: 14px;
           }
           .news-review-image{
             width: 313px;
@@ -302,7 +334,7 @@ body{
           .news-review-title{
             display: block;
             margin: 15px 0 10px 0;
-            font-size: 16px;
+            font-size: 12px;
             font-weight: bold;
             line-height: normal;
           }
@@ -315,7 +347,7 @@ body{
       }
       .articles-list-reviews{
         padding: 0;
-        margin: 15px -5px 15px -5px;
+        margin: 25px -5px 15px -5px;
         list-style-type: none;
         .clearfix;
         li{
@@ -337,6 +369,43 @@ body{
             font-size: 12px;
             color: #333333;
             padding: 0;
+          }
+        }
+      }
+
+      .new-property-list{
+        padding: 0;
+        margin: 0 -15px;
+        list-style-type: none;
+        .clearfix;
+        li{
+          float: left;
+          margin: 0 15px;
+          width: 192px;
+          .new-property-list-image{
+            width: 192px;
+            height: 115px;
+            margin-bottom: 8px;
+          }
+          .new-property-list-top-title{
+            display: block;
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            line-height: normal;
+          }
+          .new-property-list-item-title{
+            display: block;
+            margin: 8px 0;
+            font-size: 12px;
+            line-height: normal;
+          }
+          p{
+            font-size: 12px;
+            color: #333333;
+            padding: 0;
+            &.new-property-developer{
+              color: #999999;
+            }
           }
         }
       }
@@ -412,52 +481,55 @@ body{
   footer{
     padding: 25px 25px 10px 25px;
     background: url("../image/footer-bg.jpg") 0 100% no-repeat;
-    .footer-content-holder{
-      font-size: 11px;
-      padding-top: 15px;
-      border-top: solid 1px #cbcbcb;
-      color: #666;
-
-      a{
-        & + .footer-nav{
-          margin-top: 10px;
+    padding-top: 15px;
+    border-top: solid 1px #cbcbcb;
+    .footer-fast-search-nav{
+      padding: 0;
+      margin: 15px 0 15px -10px;
+      list-style-type: none;
+      li{
+        display: inline-block;
+        padding:0 15px 0 10px;
+        background: url("../image/icons/arrow.png") 100% 50% no-repeat;
+        &:last-child{
+          background: none;
         }
-        &:hover{
-          color: #f00!important;
+        a{
+          color: #929090;
+          &:hover{
+            color: @brand-danger;
+          }
         }
       }
-
-      .footer-nav{
-        margin: 0;
+    }
+    .footer-logo{
+      margin-bottom: 10px;
+    }
+    .footer-nav{
+      margin-bottom: 75px;
+      .clearfix;
+      .footer-nav-items-list{
+        float: left;
+        width: 219px;
         padding: 0;
+        margin: 0;
         list-style-type: none;
-        li{
-          padding: 0 0 7px 0;
-          font-size: 11px;
-          &.title{
-            color: #000000;
-            font-size: 14px;
-          }
-          a{
-            color: #666666;
+        a{
+          color: #666666;
+          line-height: 20px;
+          &:hover{
+            color: @brand-danger;
           }
         }
-      }
-      .vcard{
-        margin-top: 19px;
-        p{
-          margin: 0;
+        &.last{
+          width: 95px;
         }
       }
-      .copyright-holder{
-        color: #666666;
-        padding-top: 7px;
-      }
-      .row{
-        & + .row{
-          margin-top: 15px;
-        }
-      }
+    }
+    .copyright{
+      float: left;
+      margin-right: 50px;
+      color: #666666;
     }
   }
 }

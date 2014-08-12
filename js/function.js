@@ -75,7 +75,7 @@ $(document).ready(function () {
 
     startInterval();
     // This triggers after each slide change
-    $('#propertyObjectsCarousel').on('slid.bs.carousel', function () {
+    $('#propertyNewObjectsCarousel').on('slid.bs.carousel', function () {
         var carouselData = $(this).data('bs.carousel');
         var currentIndex = carouselData.getActiveIndex();
         var total = carouselData.$items.length;

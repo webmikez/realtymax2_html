@@ -152,13 +152,14 @@
   position: relative;
   .float-gallery__layout {
     padding: 0;
-    margin: 0;
+    margin: 25px 0 0 0;
     list-style-type: none;
     overflow: hidden;
     position: relative;
+    .clearfix;
     .float-gallery__item {
       width: 304px;
-      height: 128px;
+      height: 136px;
       position: absolute;
       a{
         &.media{
@@ -170,11 +171,16 @@
             text-decoration: underline;
           }
         }
-        .pull-left{
+        .pull-right{
+          margin-left: 4px;
           .media-object{
             overflow: hidden;
-            width: 139px;
-            height: 101px;
+            width: 146px;
+            height: 108px;
+            margin-top: 3px;
+            img{
+              width: 146px;
+            }
           }
         }
 
@@ -184,13 +190,15 @@
             padding: 0;
             display: block;
             margin:0 0 5px 0;
-            font-size: 12px;
+            font-size: 11px;
+            font-weight: bold;
           }
           p{
-            color: #000000!important;
+            color: #666666!important;
             padding: 0;
             margin: 0;
             font-size: 11px;
+            line-height: 14px;
           }
         }
       }
@@ -221,7 +229,7 @@
     .float-gallery__prev {
       display: inline-block;
       vertical-align: top;
-      background: url("../image/float-galery__btn.png") #f4f4f4;
+      background: url("../image/float-galery__btn.png");
       width: 17px;
       height: 17px;
       border: none !important;
@@ -233,7 +241,7 @@
     .float-gallery__next {
       display: inline-block;
       vertical-align: top;
-      background: url("../image/float-galery__btn.png") no-repeat right 0 #f4f4f4;
+      background: url("../image/float-galery__btn.png") no-repeat right 0;
       width: 17px;
       height: 17px;
       border: none !important;
@@ -243,19 +251,138 @@
       }
     }
   }
+  .float-gallery__count{
+    display: inline-block;
+    margin-top: 2px;
+  }
 }
 //Конец стилей блока Спецпердложения
 
-//Начало стилей блока Каталог объектов недвижимости на главной странице
-#propertyObjectsCarousel{
+//Начало стилей блока Рейтинг новостроек на главной странице
+#propertyNewObjectsCarousel{
   .page-header{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     .pull-right{
       .carousel-control{
         position: relative;
         display: inline-block;
         vertical-align: middle;
-        background: url("../image/float-galery__btn.png") #f4f4f4;
+        background: url("../image/float-galery__btn.png") ;
+        width: 17px;
+        height: 17px;
+        .opacity(1);
+        &.left{
+          &:hover{
+            background-position: 0 bottom;
+          }
+        }
+        &.right{
+          background-position: right 0;
+          &:hover {
+            background-position: right bottom;
+          }
+        }
+      }
+      .slider-counter{
+        display: inline-block;
+        position: relative;
+        top: 1px;
+        margin: 0 10px;
+        font-size: 11px;
+        color: #666666;
+      }
+    }
+  }
+  .media{
+    .pull-left{
+      margin-right: 10px;
+      .media-object{
+        width: 313px;
+        height: 194px;
+      }
+    }
+    .media-body{
+      .media-heading{
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        line-height: normal;
+      }
+      p{
+        color: #333333;
+        margin: 0 0 5px 0;
+      }
+    }
+  }
+  .tag-name-holder{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+    background-color: #ececec;
+    padding: 2px 5px;
+    color: #666666;
+  }
+}
+//Конец стилей блока Рейтинг новостроек на главной странице
+
+//Начало стилей блока Интервью на главной странице
+#interviewCarousel{
+  .page-header{
+    margin-bottom: 25px;
+    .pull-right{
+      .carousel-control{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../image/float-galery__btn.png") ;
+        width: 17px;
+        height: 17px;
+        .opacity(1);
+        &.left{
+          &:hover{
+            background-position: 0 bottom;
+          }
+        }
+        &.right{
+          background-position: right 0;
+          &:hover {
+            background-position: right bottom;
+          }
+        }
+      }
+      .slider-counter{
+        display: inline-block;
+        position: relative;
+        top: 1px;
+        margin: 0 10px;
+        font-size: 11px;
+        color: #666666;
+      }
+    }
+  }
+  .item{
+    &.active{
+      .interview-preview-holder{
+        margin-right: 14px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+//Конец стилей блока Интервью на главной странице
+
+//Начало стилей блока Каталог объектов недвижимости на главной странице
+#propertyObjectsCarousel{
+  .page-header{
+    margin-bottom: 25px;
+    .pull-right{
+      .carousel-control{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../image/float-galery__btn.png") ;
         width: 17px;
         height: 17px;
         .opacity(1);
@@ -281,7 +408,7 @@
   }
   .media{
     .pull-left{
-      margin-right: 10px;
+      margin-right: 14px;
       .media-object{
         width: 313px;
         height: 194px;
@@ -289,7 +416,7 @@
     }
     .media-body{
       .media-heading{
-        font-size: 16px;
+        font-size: 12px;
         font-weight: bold;
         margin: 0 0 10px 0;
         line-height: normal;
@@ -310,3 +437,30 @@
   }
 }
 //Конец стилей блока Каталог объектов недвижимости на главной странице
+
+.forum-posts-list-slider{
+  float: right;
+  margin-top: 5px;
+  .slider-control{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../image/icons/vertical-arrow.png") ;
+    width: 17px;
+    height: 17px;
+    .opacity(1);
+    &.left{
+      background-position: right 0;
+      &:hover{
+        background-position: left 0;
+      }
+    }
+    &.right{
+      background-position: right bottom;
+      &:hover {
+        background-position: left bottom;
+      }
+    }
+  }
+}
+

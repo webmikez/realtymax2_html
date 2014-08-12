@@ -144,6 +144,7 @@
 
 //Фильтр в шапке сайта
 .form-filter-holder{
+  position: relative;
   margin:25px 0 0 0;
   .form-filter-holder-title{
     font-weight: bold;
@@ -404,6 +405,103 @@
           .opacity(.6);
           &:hover{
             .opacity(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+//Быстрый поиск по имени
+.fast-name-search{
+  position: absolute;
+  top: 0;
+  right: 0;
+  .fast-name-search-title{
+    cursor: pointer;
+    padding-right: 20px;
+    border: none;
+    background: url("../image/icons/zoom.png") 100% 0 no-repeat;
+    color: #7a7979;
+    text-decoration: underline;
+    &:active{
+      border: none;
+    }
+    &:hover{
+      text-decoration: none;
+      color: red;
+      background-position: 100% -37px;
+    }
+  }
+  form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 20px;
+    width: 970px;
+    background: url("../image/icons/zoom.png") 0 3px no-repeat #ffffff;
+    border-bottom: solid 1px #bbbbbb;
+    z-index: 2;
+    .form-group{
+      margin-bottom: 0;
+      position: relative;
+      .close-form{
+        cursor: pointer;
+        position: absolute;
+        top: 3px;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        background: url("../image/icons/close-white.gif") 0 0 no-repeat;
+        &:hover{
+          .opacity(0.7);
+        }
+      }
+      .form-control{
+        padding: 0;
+        margin-bottom: 0;
+        box-shadow: none;
+        border-color: #ffffff;
+        height: 20px;
+      }
+      .dropdown-menu{
+        top: 29px;
+        padding:5px 20px 20px 20px;
+        left: -20px;
+        width: 385px;
+        border: solid 1px #cedeee;
+        &:before{
+          content: "";
+          display: block;
+          margin: -15px 0 0 0;
+          width: 18px;
+          height: 10px;
+          background: url("../image/icons/fast-name-search-result-arrow.png") 0 0 no-repeat;
+        }
+        .page-header{
+          padding: 0;
+          margin: 15px 0 0 0;
+          border-bottom-color: #d2d3d6;
+          font-size: 14px;
+        }
+        .fast-name-search-result{
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          li{
+            margin: 2px 0;
+            a{
+              display: block;
+              padding: 5px 10px;
+              &:hover{
+                background-color: #ededed;
+                text-decoration: none;
+              }
+              .fast-name-search-result-region{
+                color: #858585;
+                font-size: 11px;
+              }
+            }
           }
         }
       }

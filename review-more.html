@@ -27,74 +27,271 @@
 <div class="page-holder">
 <div class="scroll-to-top"></div>
 <header>
-    <div class="toolbar-holder">
-        <div class="row">
-            <div class="col-lg-2">
-                <button class="btn btn-primary">
-                    Подать объявление
-                </button>
-            </div>
-            <div class="col-lg-6 login-link no-padding">
-                <a href="">
-                    <span class="ajax-link">Войти через соц.сеть</span>
-                </a>
-                <a href="">
-                    <span class="ajax-link">Регистрация</span>
-                </a>
-                <a href="">
-                    <span class="ajax-link">Забыли пароль?</span>
-                </a>
-            </div>
-            <div class="col-lg-4 no-padding">
-                dd
-            </div>
+<div class="toolbar-holder">
+    <div class="row">
+        <div class="col-lg-2">
+            <button class="btn btn-primary">
+                Подать объявление
+            </button>
         </div>
-    </div>
-    <div class="rek-lg">
-        <a href=""><img src="image/rek/header-rek.jpg" alt=""/></a>
-    </div>
-    <div class="header-content-holder">
-        <div class="logo-holder">
-            <a href="/">
-                <img src="image/header-logo.jpg" alt=""/>
+        <div class="col-lg-6 login-link no-padding">
+            <a href="">
+                <span class="ajax-link">Войти через соц.сеть</span>
+            </a>
+            <a href="">
+                <span class="ajax-link">Регистрация</span>
+            </a>
+            <a href="">
+                <span class="ajax-link">Забыли пароль?</span>
             </a>
         </div>
-        <nav class="main-nav dropdown">
-            <a href="" class="active">Новостройки</a>
-            <a href="">Коттеджи</a>
-            <a href="">Таунхаусы</a>
-            <a href="">Вторичный рынок</a>
-            <a href="">Компании</a>
-            <a href="">Форум</a>
-            <a data-toggle="dropdown" class="dropdown" href="#">Еще <span class="caret"></span></a>
-            <div class="dropdown-menu" id="moreDropdown">
-
-            </div>
-        </nav>
-        <div class="clearfix"></div>
-        <div class="form-filter-holder">
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="form-filter-holder-title">Поиск новостроек:</li>
-                <li><a href="#tabMoscow" role="tab" data-toggle="tab">Москва (45)</a></li>
-                <li class="active"><a href="#tabNewMoscow" role="tab" data-toggle="tab">Новая Москва (1450)</a></li>
-                <li><a href="#tabSupMoscow" role="tab" data-toggle="tab">Подмосковье (900)</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade" id="tabMoscow">
-                    a
-                </div>
-                <div class="tab-pane fade in active" id="tabNewMoscow">
-                    <form class="no-margin" role="form">
-
-                    </form>
-                </div>
-                <div class="tab-pane fade" id="tabSupMoscow">
-                    d
-                </div>
-            </div>
+        <div class="col-lg-4 no-padding">
+            dd
         </div>
     </div>
+</div>
+<div class="rek-lg">
+    <a href=""><img src="image/rek/header-rek.jpg" alt=""/></a>
+</div>
+<div class="header-content-holder">
+<div class="logo-holder">
+    <a href="/">
+        <img src="image/header-logo.jpg" alt=""/>
+    </a>
+</div>
+<nav class="main-nav dropdown">
+    <a href="" class="active">Новостройки</a>
+    <a href="">Коттеджи</a>
+    <a href="">Таунхаусы</a>
+    <a href="">Вторичный рынок</a>
+    <a href="">Компании</a>
+    <a href="">Форум</a>
+    <a data-toggle="dropdown" class="dropdown" href="#">Еще <span class="caret"></span></a>
+    <div class="dropdown-menu" id="moreDropdown">
+
+    </div>
+</nav>
+<div class="clearfix"></div>
+<div class="form-filter-holder">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="form-filter-holder-title">Поиск новостроек:</li>
+        <li><a href="#tabMoscow" role="tab" data-toggle="tab">Москва (45)</a></li>
+        <li class="active"><a href="#tabNewMoscow" role="tab" data-toggle="tab">Новая Москва (1450)</a></li>
+        <li><a href="#tabSupMoscow" role="tab" data-toggle="tab">Подмосковье (900)</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade" id="tabMoscow">
+            a
+        </div>
+        <div class="tab-pane fade in active" id="tabNewMoscow">
+            <form class="no-margin" role="form">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="select-regions"><span class="caret"></span>Выберите район</a>
+                                <div class="dropdown-menu select-regions-menu">
+                                    <div class="towns-holder">
+                                        <div class="page-header">
+                                            Города Новой Москвы
+                                        </div>
+                                        <ul class="select-regions-lists">
+                                            <li><a href="">Московский</a></li>
+                                            <li><a href="">Троицк</a></li>
+                                            <li><a href="">Щербинка</a></li>
+                                        </ul>
+                                        <a href="" class="more-select">Выбрать другие города (3)</a>
+                                    </div>
+                                    <div class="regions-holder">
+                                        <div class="page-header">
+                                            Районы Новой Москвы
+                                        </div>
+                                        <ul class="select-regions-lists">
+                                            <li><a href="">Киевский</a></li>
+                                            <li><a href="">Кокошкино</a></li>
+                                            <li><a href="">Коммунарка</a></li>
+                                        </ul>
+                                        <a href="" class="more-select">Выбрать другие районы (29)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="select-costs"><span class="caret"></span>Цена за м<sup>2</sup> </a>
+                                <div class="dropdown-menu select-costs-menu">
+                                    <form action="">
+                                        <div class="form-group col-lg-6">
+                                            <input type="text" class="form-control" value="от 150 000 р."/>
+                                            <ul class="costs-lists">
+                                                <li><a href="">40 000 - 60 000</a></li>
+                                                <li><a href="">80 000 - 100 000</a></li>
+                                                <li><a href="">120 000 - 150 000</a></li>
+                                                <li><a href="">150 000 - 180 000</a></li>
+                                                <li><a href="">210 000 - 240 000</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <input type="text" class="form-control" value="до 180 000 р."/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="select-stages"><span class="caret"></span>Этап готовности</a>
+                                <div class="dropdown-menu select-stages-menu">
+                                    <form action="">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">В стадии проекта
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Строиться
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Построен
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Сдан
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value=""> Вторичный рынок
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a data-toggle="dropdown" href="#" class="select-finishing-date"><span class="caret"></span>Срок сдачи</a>
+                                <div class="dropdown-menu select-finishing-date-menu">
+                                    <form action="">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">3 квартал 2014
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">4 квартал 2014
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">1 квартал 2015
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">2 квартал 2015
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">3 квартал 2015
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">4 квартал 2015
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">1 квартал 2016
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">2 квартал 2016
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">3 квартал 2016
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">4 квартал 2016
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">2017
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">2018
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-right">
+                            <button type="submit" class="btn btn-danger">Показать (451)</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <ul class="form-filter-tags-list">
+                    <li>
+                        Район: Московский <span class="form-filter-tags-close"></span>
+                    </li>
+                    <li>
+                        цена от 10 000 р. до 100 000 000 р. <span class="form-filter-tags-close"></span>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="tabSupMoscow">
+            d
+        </div>
+    </div>
+</div>
+</div>
 </header>
+<section class="leading-companies">
+    <div class="leading-companies-logo-holder">
+        <ul class="leading-companies-logo-list">
+            <li class="leading-companies-logo-title">
+                <a href="">Ведущие компании</a>
+            </li>
+            <li>
+                <a href=""><img src="image/tmp/logo/2.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href=""><img src="image/tmp/logo/3.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href=""><img src="image/tmp/logo/4.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href=""><img src="image/tmp/logo/5.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href=""><img src="image/tmp/logo/1.jpg" alt=""/></a>
+            </li>
+            <li>
+                <a href=""><img src="image/tmp/logo/2.jpg" alt=""/></a>
+            </li>
+        </ul>
+    </div>
+</section>
 <main>
     <article>
         <ol class="breadcrumb">
@@ -258,60 +455,82 @@
     </aside>
 </main>
 <footer>
-    <div class="footer-content-holder">
-        <div class="row">
-            <div class="col-lg-3">
-                <ul class="footer-nav">
-                    <li class="title">Покупателям</li>
-                    <li><a href="">Покупка квартир и комнат</a></li>
-                    <li><a href="">Квартиры в новостройках</a></li>
-                    <li><a href="">Загородная недвижимость</a></li>
-                    <li><a href="">Помощь в получении ипотеки</a></li>
-                    <li><a href="">Коммерческая недвижимость</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <ul class="footer-nav">
-                    <li class="title">Владельцам</li>
-                    <li><a href="">Жилая недвижимость</a></li>
-                    <li><a href="">Загородная недвижимость</a></li>
-                    <li><a href="">Обмен квартир</a></li>
-                    <li><a href="">Сдать квартиру или коттедж</a></li>
-                    <li><a href="">Оценка недвижимости</a></li>
-                    <li><a href="">Коммерческая недвижимость</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <ul class="footer-nav">
-                    <li class="title">Арендаторам</li>
-                    <li><a href="">Квартиры и комнаты</a></li>
-                    <li><a href="">Аренда коттеджей</a></li>
-                    <li><a href="">Нежилые помещения</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <ul class="footer-nav">
-                    <li class="title">Дополнительные услуги</li>
-                    <li><a href="">Получение справок</a></li>
-                    <li><a href="">Регистрация сделок</a></li>
-                    <li><a href="">Получение документов БТИ</a></li>
-                    <li><a href="">Получение выписок ЕГРП</a></li>
-                    <li><a href="">Получение кадастрового паспорта</a></li>
-                    <li><a href="">Консультация юриста</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="copyright-holder">123 610 г. Москва ул. Международная д. 7 +7 (495) 123 32 10</div>
-            </div>
-            <div class="col-lg-6 text-right">
-                <a href="">
-                    <img src="image/sample-counter.jpg" alt=""/>
-                </a>
-            </div>
-        </div>
+    <ul class="footer-fast-search-nav">
+        <li>Быстрый поиск новостроек:</li>
+        <li><a href="">По району Москвы</a></li>
+        <li><a href="">По району Подмосковья</a></li>
+        <li><a href="">По городам Подмосковья</a></li>
+        <li><a href="">По округам Москвы</a></li>
+        <li><a href="">По станциям метро Москвы</a></li>
+    </ul>
+    <div class="footer-logo">
+        <a href=""><img src="image/footer__logo.jpg" alt=""/></a>
     </div>
+    <div class="footer-nav">
+        <ul class="footer-nav-items-list">
+            <li>
+                <a href="">О проекте</a>
+            </li>
+            <li>
+                <a href="">Реклама на сайте</a>
+            </li>
+            <li>
+                <a href="">Контакты</a>
+            </li>
+        </ul>
+        <ul class="footer-nav-items-list">
+            <li>
+                <a href="">Новости недвижимости</a>
+            </li>
+            <li>
+                <a href="">Обзоры</a>
+            </li>
+            <li>
+                <a href="">Интервью</a>
+            </li>
+        </ul>
+        <ul class="footer-nav-items-list">
+            <li>
+                <a href="">Топ новостроек</a>
+            </li>
+            <li>
+                <a href="">Топ коттеджных поселков</a>
+            </li>
+            <li>
+                <a href="">Топ застройщиков</a>
+            </li>
+        </ul>
+        <ul class="footer-nav-items-list">
+            <li>
+                <a href="">Новостройки</a>
+            </li>
+            <li>
+                <a href="">Купить квартиру</a>
+            </li>
+            <li>
+                <a href="">Коттеджные поселки</a>
+            </li>
+        </ul>
+        <ul class="footer-nav-items-list last">
+            <li>
+                <a href="">Застройщики</a>
+            </li>
+            <li>
+                <a href="">Форум</a>
+            </li>
+            <li>
+                <a href="">Карта сайта</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        &copy; Реалти Макс, 2008 - 2014
+    </div>
+    <ul class="list-inline shared-links no-margin">
+        <li><a href="" class="facebook"></a></li>
+        <li><a href="" class="twitter"></a></li>
+        <li><a href="" class="vk"></a></li>
+    </ul>
 </footer>
 </div>
 <!-- Modal -->

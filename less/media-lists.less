@@ -250,3 +250,72 @@
     margin-bottom: 5px;
   }
 }
+//Посты с форума
+.forum-posts-list-holder{
+  margin: 17.5px 0 0 0;
+  .media{
+    border-bottom: solid 1px #e5e5e5;
+    &:last-child{
+      border-bottom: none;
+    }
+    .pull-left{
+      margin-right: 10px;
+    }
+  }
+  .media-heading{
+    font-size: 13px;
+    margin-bottom: 12px;
+    a{
+      display: block;
+    }
+    .user-name{
+      color: #9f9f9f;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.interview-preview-holder{
+  width: 311px;
+  float: left;
+  .interview-preview-baloon{
+    position: relative;
+    background-color: #eeeeee;
+    padding: 17px;
+    margin-bottom: 20px;
+    &:after{
+      position: absolute;
+      left: 79px;
+      bottom: -15px;
+      content: "";
+      width: 16px;
+      height: 15px;
+      background: url("../image/icons/interview-preview-baloon-arrow.gif") 0 0 no-repeat;
+    }
+    .interview-preview-baloon-title{
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    p{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  .media{
+    .pull-left{
+      margin-right: 15px;
+    }
+    .media-body{
+      font-style: italic;
+      color: #666666;
+      font-size: 11px;
+      .media-heading{
+        font-weight: bold;
+        font-size: 14px;
+        font-style: normal;
+        color: #333333;
+      }
+    }
+  }
+}
